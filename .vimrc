@@ -6,7 +6,6 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-
 " Let Vundle manage Vundle, required.
 Plugin 'VundleVim/Vundle.vim'
 
@@ -31,6 +30,11 @@ set backspace=indent,eol,start
 
 " Set the Airline theme.
 let g:airline_theme='base16_monokai'
+
+" Use the monokai colorscheme
+" (https://github.com/sickill/vim-monokai)
+syntax enable
+colorscheme monokai
 
 " Customize NERDCommenter preferences.
 let g:NERDSpaceDelims = 1 " Space after comment delim.
